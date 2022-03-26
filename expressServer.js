@@ -31,4 +31,6 @@ app.get("/", async (req, res) => {
   }
 });
 
-app.listen(6515, () => console.log("App launched on http://localhost:6515"));
+app.listen(process.env.PORT || 80, () =>
+  console.log("App launched on http://localhost:6515")
+);
