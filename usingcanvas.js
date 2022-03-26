@@ -17,7 +17,7 @@ const drawWatermarkAsBuffer = async (
   ctx.globalAlpha = 0.5;
   const loadWatermarkImage = await loadImage(pathOfWaterMarkImageFile);
   // drawing the watermark image over the source image
-  //                                x 		y     w 	 h
+  //                                x    y    w    h
   ctx.drawImage(loadWatermarkImage, 987, 427, 300, 300);
   return canvas.toBuffer();
 };
