@@ -23,7 +23,7 @@ app.get("/", async (req, res) => {
       1280,
       720
     );
-    res.send(`<img src="data:image/png;base64,${buffer.toString("base64")}">`);
+    res.send(buffer);
   } else {
     res.send(
       '<h1 style="font-size: 120px;font-family:sans-serif;">No url provided hehehe</h1>'
